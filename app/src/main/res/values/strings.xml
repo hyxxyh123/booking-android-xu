@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Seat Reservation</string>
+
+    <string name="app_t1">Select Floor</string>
+    <string-array name="data1">
+        <item>1st Floor</item>
+        <item>2nd Floor</item>
+        <item>3rd Floor</item>
+        <item>4th Floor</item>
+        <item>5th Floor</item>
+        <item>6th Floor</item>
+        <item>7th Floor</item>
+        <item>8th Floor</item>
+        <item>9th Floor</item>
+        <item>10th Floor and Above</item>
+    </string-array>
+</resources>

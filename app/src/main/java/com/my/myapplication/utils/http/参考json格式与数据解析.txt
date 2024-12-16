@@ -1,0 +1,64 @@
+{  "message": "",
+     "code": 200，
+     "success":true,
+        "data": [
+            {
+                "age": "22"
+                "level": "1",
+                "level_anchor": "1",
+                "list": [
+                    {
+                        "href": "",
+                        "id": "9",
+                        "name": "个性设置",
+                        "thumb": "http://ad.aoranjianzhong.com/static/app/person/setting.png"
+                    }
+                ],
+                "videolist": [
+
+                    {
+                        "canselect": "1",
+                        "coin": "400",
+                        "level": "1"
+                    }
+                ],
+                "voice_value": "0",
+                "voicelist": [
+                    {
+                        "canselect": "0",
+                        "coin": "500",
+                        "level": "5"
+                    }
+                ]
+            }
+        ],
+
+}
+
+//格式 2 3
+
+{"code":200,"success":true,"message":"","data":[{"isedit":"0"}]}
+{"code":200,"success":true,"message":"","data":[]}
+
+解析1: 解析data[0]数据 json里不能包含\r\n否则解析失败
+JSONObject obj = JSON.parseObject(data[0]);
+String uid = obj.getString("id");
+int val    = obj.getIntValue("isreg");
+
+xxx bean = JSON.parseObject(info[0], xxx.class);
+
+int status = JSON.parseObject(info[0]).getIntValue("status");
+
+ String count=JsonUtil.getString(info[0],"nums");
+StoreBean storeBean= JsonUtil.getJsonToBean(info[0],StoreBean.class);
+
+ JSONObject obj = JSON.parseObject(info[0]);
+  List<GuardRightBean>    mRightList = JSON.parseArray(obj.getString("privilege"), GuardRightBean.class);
+List<GuidePageBean> mRightList = JsonUtil.getJsonToList(Arrays.toString(data), GuidePageBean.class);
+
+
+
+
+
+
+

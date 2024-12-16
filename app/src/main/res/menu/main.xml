@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DemoActivity">
+
+    <item
+        android:id="@+id/id1"
+        android:title="Edit"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/id2"
+        android:title="Delete"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/id3"
+        android:title="Reset all appointments to available"
+        app:showAsAction="never" />
+
+</menu>
